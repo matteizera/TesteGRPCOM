@@ -4,6 +4,6 @@ import ScheduleController from './controllers/ScheduleController'
 
 const routes = Router()
 
-routes.get('/orphanages/:date',ScheduleController.find)
+routes.get('/schedule/:date',ScheduleController.find)
 
 export default routes
