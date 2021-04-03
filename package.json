@@ -3,8 +3,16 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "compilerOptions" : {
+        "include" : [
+          "src/**/*.ts"
+      ],
+      "exclude" : [
+          "node_modules"  ]
+      },
   "scripts": {
-    "dev": "ts-node-dev --transpile-only --ignore-watch node_modules  src/server.ts"
+    "dev": "ts-node-dev --transpile-only --ignore-watch node_modules  src/server.ts",
+    "start": "ts-node src/server.ts"
   },
   "author": "",
   "license": "ISC",
@@ -12,7 +20,8 @@
     "axios": "^0.21.1",
     "cors": "^2.8.5",
     "express": "^4.17.1",
-    "express-async-errors": "^3.1.1"
+    "express-async-errors": "^3.1.1",
+    "ts-node": "^9.1.1"
   },
   "devDependencies": {
     "@types/cors": "^2.8.10",
